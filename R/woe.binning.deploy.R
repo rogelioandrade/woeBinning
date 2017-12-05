@@ -166,7 +166,7 @@ woe.binning.deploy <- function(df, binning, min.iv.total, add.woe.or.dum.var) {
 	}
 	
 	if ( (length(binning)/3) == 1 ) {
-		dfrm.binned <- woe.binning.deploy.2(df, binning[1][[1]], binning[2][[1]], add.woe.or.dum.var)
+		dfrm.binned <- woe.binning.deploy.2(df, binning[1][[1]], binning[2][[9]], add.woe.or.dum.var)
 		df <- cbind(df, dfrm.binned)   # add binned variables to input data frame
 	} else {	
 		for (i in 1:(length(binning)/3)) {
